@@ -1,0 +1,263 @@
+/* line 5, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/_layout.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 15, ../sass/_layout.scss */
+.wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.wrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 19, ../sass/_layout.scss */
+.main-search {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: columns(12, 12);
+  margin: 0 auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.main-search::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 22, ../sass/_layout.scss */
+.main-search > div {
+  width: 40.67797%;
+  float: right;
+}
+
+/* line 9, ../sass/style.scss */
+.header > h1 {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+/* line 15, ../sass/style.scss */
+.main-search > div .search-btn, .sub-search .search-btn {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #417b7b;
+  box-shadow: none;
+  color: white;
+  border: 1px solid #417b7b;
+}
+/* line 25, ../sass/style.scss */
+.main-search > div .search-btn :hover, .sub-search .search-btn :hover {
+  background-color: #6fb3b3;
+}
+
+/* line 30, ../sass/style.scss */
+section {
+  padding: 0 5%;
+}
+
+/* line 33, ../sass/style.scss */
+.header {
+  background-color: #90c5c5;
+  height: 80px;
+}
+/* line 39, ../sass/style.scss */
+.header ul {
+  margin: 10px;
+}
+/* line 41, ../sass/style.scss */
+.header ul > li {
+  display: inline-block;
+}
+/* line 43, ../sass/style.scss */
+.header ul > li > a {
+  display: block;
+  padding: 8px 12px;
+  margin-right: 10px;
+  color: #529d9d;
+  background-color: #b1d7d7;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 51, ../sass/style.scss */
+.header ul > li > a:hover {
+  background-color: #d3e8e8;
+}
+
+/* line 58, ../sass/style.scss */
+h2 {
+  color: #417b7b;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+/* line 64, ../sass/style.scss */
+.main-search {
+  background-color: #ebebeb;
+  height: 360px;
+  position: relative;
+}
+/* line 68, ../sass/style.scss */
+.main-search > div {
+  position: relative;
+  top: 120px;
+}
+/* line 69, ../sass/style.scss */
+.main-search > div > input {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  padding: 0;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: 1px solid #417b7b;
+}
+/* line 78, ../sass/style.scss */
+.main-search > div .search-btn {
+  margin: -5px;
+}
+
+/* line 87, ../sass/style.scss */
+.sub-search {
+  background-color: white;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 91, ../sass/style.scss */
+.sub-search .group {
+  margin-bottom: 20px;
+}
+/* line 94, ../sass/style.scss */
+.sub-search > div {
+  position: relative;
+}
+/* line 97, ../sass/style.scss */
+.sub-search .med-box {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+}
+/* line 101, ../sass/style.scss */
+.sub-search .med-box input {
+  display: inline-block;
+}
+/* line 104, ../sass/style.scss */
+.sub-search .med-box img {
+  position: relative;
+  display: block;
+  border: 3px solid #e1e1e1;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+/* line 113, ../sass/style.scss */
+.sub-search input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #417b7b;
+  height: 40px;
+  font-size: 18px;
+  width: 200px;
+  outline: none;
+}
+/* line 121, ../sass/style.scss */
+.sub-search label {
+  font-size: 16px;
+  color: #6fb3b3;
+  font-weight: bold;
+}
+/* line 126, ../sass/style.scss */
+.sub-search .search-btn {
+  margin-left: 30px;
+}
+
+/* line 132, ../sass/style.scss */
+.search-rank {
+  background-color: #ebebeb;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #417b7b;
+}
+/* line 139, ../sass/style.scss */
+.search-rank ol li {
+  display: inline-block;
+  margin-left: 10px;
+}
