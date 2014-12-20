@@ -137,13 +137,6 @@ html, body {
   float: right;
 }
 
-/* line 9, ../sass/style.scss */
-.header > h1 {
-  white-space: nowrap;
-  text-indent: 100%;
-  overflow: hidden;
-}
-
 /* line 15, ../sass/style.scss */
 .main-search > div .search-btn, .sub-search .search-btn {
   height: 40px;
@@ -168,18 +161,20 @@ section {
 
 /* line 33, ../sass/style.scss */
 .header {
+  padding-top: 10px;
   background-color: #90c5c5;
+  box-sizing: border-box;
   height: 80px;
 }
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .header ul {
-  margin: 10px;
+  display: inline-block;
 }
-/* line 41, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .header ul > li {
   display: inline-block;
 }
-/* line 43, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .header ul > li > a {
   display: block;
   padding: 8px 12px;
@@ -191,12 +186,12 @@ section {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 51, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .header ul > li > a:hover {
   background-color: #d3e8e8;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 h2 {
   color: #417b7b;
   font-size: 30px;
@@ -204,16 +199,17 @@ h2 {
   margin: 20px 0;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .main-search {
-  background-color: #ebebeb;
+  background: #e9e9e9 url(../images/index-big-img.jpg) center center no-repeat;
+  background-size: contain;
   height: 360px;
   position: relative;
 }
 /* line 68, ../sass/style.scss */
 .main-search > div {
   position: relative;
-  top: 120px;
+  top: 186px;
 }
 /* line 69, ../sass/style.scss */
 .main-search > div > input {
@@ -291,71 +287,75 @@ h2 {
   padding-bottom: 60px;
   color: #417b7b;
 }
-/* line 139, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
+.search-rank ol {
+  list-style-type: decimal;
+}
+/* line 140, ../sass/style.scss */
 .search-rank ol li {
-  display: inline-block;
-  margin-left: 10px;
+  float: left;
+  margin-left: 20px;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .main {
   padding-top: 60px;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .main-list {
   position: relative;
   display: block;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .main-list .list-box {
   margin-bottom: 30px;
 }
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .main-list .list-box img {
   width: 130px;
   height: 130px;
   border: 3px solid #ebebeb;
   box-sizing: border-box;
 }
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .main-list .list-box h3 {
   color: #90c5c5;
   font-size: 21px;
   font-weight: bold;
   padding-bottom: 5px;
 }
-/* line 166, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .main-list .list-box span {
   color: #90c5c5;
   font-size: 14px;
 }
-/* line 170, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .main-list .list-box .list-detail {
   margin-top: 20px;
 }
-/* line 172, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .main-list .list-box .list-detail p {
-  font-size: 16px;
+  font-size: 15px;
   color: #7d7d7d;
   margin-bottom: 10px;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .pagination {
   text-align: center;
 }
-/* line 182, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .pagination ul {
   padding-top: 30px;
 }
-/* line 185, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .pagination li {
   display: inline-block;
   text-align: center;
   padding: 0 3px;
 }
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .pagination li a {
   color: black;
   display: block;
@@ -365,13 +365,22 @@ h2 {
   line-height: 25px;
   background-color: #90c5c5;
 }
-/* line 197, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .pagination li a:hover, .pagination li a.active {
   background-color: #a1cece;
   color: white;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
+.footer {
+  background-color: #90c5c5;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+/* line 212, ../sass/style.scss */
 .clear-both {
   clear: both;
   overflow: hidden;
