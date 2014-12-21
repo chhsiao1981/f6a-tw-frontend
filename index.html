@@ -79,4 +79,24 @@
 	</section>
 </div>
 </body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var search_button = document.getElementsByClassName("search-btn");
+            search_button.onclick = function() {
+                var mainsearch = document.getElementsByClassName("main-search")[0].childNodes[0].childNodes[1];
+                var query = mainsearch.value;
+
+                if (query != undefined || query != null) {
+                    Redirect(query);
+                }
+            };
+                
+         };
+        
+
+        function Redirect(query)
+        {
+            window.location = "http://domainname?query" + query;
+        }
+    </script>
 </html>

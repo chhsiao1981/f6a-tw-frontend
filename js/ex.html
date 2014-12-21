@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+  window.onload = function() {
+  var request;
+  var query;
+  var limit;
+  var search_button = document.getElementById("search-btn");
+
+  search_button.onclick = function() {
+
+    request = new XMLHttpRequest();
+
+    request.open("GET", "http://106.187.101.193:9006/api/query?str=HYM", true);
+
+    request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
+      //console.log(request.responseText);
+      var data = request.responseText;
+
+      var json = JSON.parse(data);
+   }
+  };
+  
+
+  request.send(null);
+  };
+};
+
+</script>
+</head> 
+  
+  <body>
+
+    <button id="search-btn">Run</button>
+  </body>
+
+</html>
