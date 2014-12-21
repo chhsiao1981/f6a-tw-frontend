@@ -1,0 +1,28 @@
+<html>
+    <head>
+      <script src="jquery.js"></script>
+    </head>
+        <body>
+                <div id = 'twitterFeed'></div>
+
+                <script>
+                  function load_posts(){
+                      $.ajax({
+                              url: "http://106.187.101.193:9006/api/query?str=HYM",
+                              type: "GET",
+
+                              success: function(json) {
+                                console.log(json);
+                              
+                             },
+                        error: function(xhr, errmsg, err) {
+                          console.log(xhr.status + ":" + xhr.responseText);
+                          }
+                          });
+                  }
+                load_posts();
+
+                </script>
+                
+        </body>
+    </html>
