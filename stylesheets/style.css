@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../sass/_layout.scss */
+/* line 11, ../sass/_layout.scss */
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* line 15, ../sass/_layout.scss */
+/* line 16, ../sass/_layout.scss */
 .wrapper {
   max-width: 100%;
   margin-left: auto;
@@ -82,7 +82,7 @@ html, body {
   clear: both;
 }
 
-/* line 19, ../sass/_layout.scss */
+/* line 20, ../sass/_layout.scss */
 .main-search {
   max-width: 100%;
   margin-left: auto;
@@ -96,13 +96,39 @@ html, body {
   display: block;
   clear: both;
 }
-/* line 22, ../sass/_layout.scss */
+/* line 23, ../sass/_layout.scss */
 .main-search > div {
-  width: 40.67797%;
+  width: 91.52542%;
   float: right;
 }
+@media (min-width: 768px) {
+  /* line 23, ../sass/_layout.scss */
+  .main-search > div {
+    width: 40.67797%;
+    float: right;
+  }
+}
 
-/* line 27, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
+.header > div {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.header > div::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1300px) {
+  /* line 31, ../sass/_layout.scss */
+  .header > div {
+    width: 1024px;
+  }
+}
+
+/* line 38, ../sass/_layout.scss */
 .main {
   max-width: 100%;
   margin-left: auto;
@@ -114,30 +140,373 @@ html, body {
   display: block;
   clear: both;
 }
-/* line 30, ../sass/_layout.scss */
-.main .list-box:nth-child(2n+1) {
-  width: 49.15254%;
-  float: left;
-  margin-right: 1.69492%;
+@media (min-width: 1300px) {
+  /* line 38, ../sass/_layout.scss */
+  .main {
+    width: 1024px;
+  }
 }
-/* line 33, ../sass/_layout.scss */
-.main .list-box:nth-child(2n+2) {
-  width: 49.15254%;
-  float: right;
+
+/* line 44, ../sass/_layout.scss */
+.list-box {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 36, ../sass/_layout.scss */
-.main .list-box img {
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.list-box::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 47, ../sass/_layout.scss */
+  .list-box:nth-child(2n+1) {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 50, ../sass/_layout.scss */
+  .list-box:nth-child(2n+2) {
+    width: 49.15254%;
+    float: right;
+  }
+}
+/* line 54, ../sass/_layout.scss */
+.list-box img {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 39, ../sass/_layout.scss */
-.main .list-box .list-info {
+/* line 57, ../sass/_layout.scss */
+.list-box .list-info {
   width: 74.57627%;
   float: right;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 62, ../sass/_layout.scss */
+.med-info {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.med-info::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 64, ../sass/_layout.scss */
+.med-info > img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.med-info > img::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 64, ../sass/_layout.scss */
+  .med-info > img {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 70, ../sass/_layout.scss */
+.med-info .med-intro {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.med-info .med-intro::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 70, ../sass/_layout.scss */
+  .med-info .med-intro {
+    width: 74.57627%;
+    float: right;
+  }
+}
+/* line 76, ../sass/_layout.scss */
+.med-info .med-chem {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.med-info .med-chem::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 76, ../sass/_layout.scss */
+  .med-info .med-chem {
+    width: 57.62712%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 82, ../sass/_layout.scss */
+.med-info .tag-group {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.med-info .tag-group::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 82, ../sass/_layout.scss */
+  .med-info .tag-group {
+    width: 40.67797%;
+    float: right;
+  }
+}
+
+/* line 1, ../sass/_tab.scss */
+ul.resp-tabs-list, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, ../sass/_tab.scss */
+.resp-tabs-list li {
+  border-radius: 4px 4px 0 0;
+  font-size: 13px;
+  display: inline-block;
+  padding: 13px 5px;
+  margin: 0 4px 0 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+}
+
+/* line 17, ../sass/_tab.scss */
+.resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+
+/* line 23, ../sass/_tab.scss */
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+/* line 29, ../sass/_tab.scss */
+.resp-tab-content {
+  display: none;
+  padding: 15px;
+}
+
+/* line 34, ../sass/_tab.scss */
+.resp-tab-active {
+  border: 1px solid #90c5c5 !important;
+  border-bottom: none;
+  margin-bottom: -1px !important;
+  padding: 12px 14px 14px 14px !important;
+  border-top: 4px solid #90c5c5 !important;
+  border-bottom: 0px #fff solid !important;
+}
+
+/* line 43, ../sass/_tab.scss */
+.resp-tab-active {
+  border-bottom: none;
+  background-color: #fff;
+}
+
+/* line 48, ../sass/_tab.scss */
+.resp-content-active, .resp-accordion-active {
+  display: block;
+}
+
+/* line 52, ../sass/_tab.scss */
+.resp-tab-content {
+  border: 1px solid #90c5c5;
+  border-top-color: #90c5c5;
+}
+
+/* line 57, ../sass/_tab.scss */
+h2.resp-accordion {
+  font-size: 13px;
+  border: 1px solid #c1c1c1;
+  border-top: 0px solid #c1c1c1;
+  margin: 0px;
+  padding: 10px 15px;
+}
+
+/* line 65, ../sass/_tab.scss */
+h2.resp-tab-active {
+  border-bottom: 0px solid #c1c1c1 !important;
+  margin-bottom: 0px !important;
+  padding: 10px 15px !important;
+}
+
+/* line 71, ../sass/_tab.scss */
+h2.resp-tab-title:last-child {
+  border-bottom: 12px solid #c1c1c1 !important;
+  background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+/* line 77, ../sass/_tab.scss */
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 30%;
+}
+
+/* line 82, ../sass/_tab.scss */
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  padding: 15px 15px !important;
+  margin: 0 0 4px;
+  cursor: pointer;
+  float: none;
+}
+
+/* line 90, ../sass/_tab.scss */
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  float: left;
+  width: 68%;
+  min-height: 250px;
+  border-radius: 4px;
+  clear: none;
+}
+
+/* line 101, ../sass/_tab.scss */
+.resp-vtabs .resp-tab-content {
+  border: none;
+  word-wrap: break-word;
+}
+
+/* line 106, ../sass/_tab.scss */
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1;
+  margin-right: -1px !important;
+  padding: 14px 15px 15px 14px !important;
+  border-top: 1px solid;
+  border: 1px solid #90c5c5 !important;
+  border-left: 4px solid #90c5c5 !important;
+  margin-bottom: 4px !important;
+  border-right: 1px #FFF solid !important;
+}
+
+/* line 118, ../sass/_tab.scss */
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+
+/* line 128, ../sass/_tab.scss */
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid white;
+}
+
+/*-----------Accordion styles-----------*/
+/* line 136, ../sass/_tab.scss */
+h2.resp-tab-active {
+  background: #90c5c5;
+  /* !important;*/
+  color: white;
+}
+
+/* line 141, ../sass/_tab.scss */
+.resp-easy-accordion h2.resp-accordion {
+  display: block;
+}
+
+/* line 145, ../sass/_tab.scss */
+.resp-easy-accordion .resp-tab-content {
+  border: 1px solid #c1c1c1;
+}
+
+/* line 149, ../sass/_tab.scss */
+.resp-easy-accordion .resp-tab-content:last-child {
+  border-bottom: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+/* line 153, ../sass/_tab.scss */
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+
+/* line 158, ../sass/_tab.scss */
+.resp-tab-content-active {
+  display: block;
+}
+
+/* line 162, ../sass/_tab.scss */
+h2.resp-accordion:first-child {
+  border-top: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+  /* line 168, ../sass/_tab.scss */
+  ul.resp-tabs-list {
+    display: none;
+  }
+
+  /* line 172, ../sass/_tab.scss */
+  h2.resp-accordion {
+    display: block;
+    font-weight: normal;
+  }
+
+  /* line 177, ../sass/_tab.scss */
+  .resp-vtabs .resp-tab-content {
+    border: 1px solid #C1C1C1;
+  }
+
+  /* line 181, ../sass/_tab.scss */
+  .resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: 100px;
+    clear: none;
+  }
+
+  /* line 189, ../sass/_tab.scss */
+  .resp-accordion-closed {
+    display: none !important;
+  }
+
+  /* line 193, ../sass/_tab.scss */
+  .resp-vtabs .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+  }
+}
+/* line 16, ../sass/style.scss */
 .main-search > div .search-btn, .sub-search .search-btn {
   height: 40px;
   padding: 0 20px;
@@ -149,38 +518,52 @@ html, body {
   color: white;
   border: 1px solid #417b7b;
 }
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .main-search > div .search-btn :hover, .sub-search .search-btn :hover {
   background-color: #6fb3b3;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 section {
   padding: 0 5%;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .header {
   padding-top: 10px;
   background-color: #90c5c5;
   box-sizing: border-box;
-  height: 80px;
+  height: 120px;
 }
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .header img {
   position: relative;
   top: 10px;
 }
-/* line 42, ../sass/style.scss */
+@media (min-width: 480px) {
+  /* line 34, ../sass/style.scss */
+  .header {
+    height: 80px;
+  }
+}
+/* line 46, ../sass/style.scss */
 .header ul {
+  position: relative;
+  top: 20px;
   display: inline-block;
   margin-left: 20px;
 }
-/* line 45, ../sass/style.scss */
+@media (min-width: 480px) {
+  /* line 46, ../sass/style.scss */
+  .header ul {
+    top: 0;
+  }
+}
+/* line 54, ../sass/style.scss */
 .header ul > li {
   display: inline-block;
 }
-/* line 47, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .header ul > li > a {
   display: block;
   padding: 8px 12px;
@@ -192,12 +575,12 @@ section {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 55, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .header ul > li > a:hover {
   background-color: #d3e8e8;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 h2 {
   color: #417b7b;
   font-size: 30px;
@@ -205,58 +588,76 @@ h2 {
   margin: 20px 0;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .main-search {
   background: #e9e9e9 url(../images/index-big-img.jpg) center center no-repeat;
   background-size: contain;
-  height: 360px;
+  box-sizing: border-box;
+  height: 240px;
   position: relative;
 }
-/* line 73, ../sass/style.scss */
+@media (min-width: 768px) {
+  /* line 77, ../sass/style.scss */
+  .main-search {
+    height: 360px;
+  }
+}
+/* line 86, ../sass/style.scss */
 .main-search > div {
+  background-color: rgba(255, 255, 255, 0.5);
   position: relative;
-  top: 186px;
+  padding: 10px;
+  margin: 0 auto;
+  top: 50px;
 }
-/* line 74, ../sass/style.scss */
+@media (min-width: 768px) {
+  /* line 86, ../sass/style.scss */
+  .main-search > div {
+    top: 186px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+/* line 96, ../sass/style.scss */
 .main-search > div > input {
-  width: 200px;
+  width: 60%;
   height: 40px;
   font-size: 18px;
   padding: 0;
   padding-left: 5px;
   box-sizing: border-box;
   border: 1px solid #417b7b;
+  float: left;
 }
-/* line 83, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .main-search > div .search-btn {
-  margin: -5px;
+  float: left;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .sub-search {
   background-color: white;
   position: relative;
   margin-bottom: 50px;
 }
-/* line 96, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .sub-search .group {
   margin-bottom: 20px;
 }
-/* line 99, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .sub-search > div {
   position: relative;
 }
-/* line 102, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .sub-search .med-box {
   position: relative;
   display: inline-block;
   margin: 10px 10px 10px 0;
 }
-/* line 106, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .sub-search .med-box input {
   display: inline-block;
 }
-/* line 109, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .sub-search .med-box img {
   position: relative;
   display: block;
@@ -265,7 +666,7 @@ h2 {
   height: 100px;
   margin-top: 10px;
 }
-/* line 118, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .sub-search input[type="text"] {
   border: 0;
   border-bottom: 1px solid #417b7b;
@@ -274,18 +675,18 @@ h2 {
   width: 200px;
   outline: none;
 }
-/* line 126, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .sub-search label {
   font-size: 16px;
   color: #6fb3b3;
   font-weight: bold;
 }
-/* line 131, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .sub-search .search-btn {
   margin-left: 30px;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .search-rank {
   background-color: #ebebeb;
   position: relative;
@@ -293,84 +694,85 @@ h2 {
   padding-bottom: 60px;
   color: #417b7b;
 }
-/* line 143, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .search-rank ol {
   list-style-type: decimal;
 }
-/* line 145, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .search-rank ol li {
   float: left;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .main {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .main-list {
   position: relative;
   display: block;
 }
-/* line 158, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .main-list .list-box {
+  box-sizing: border-box;
   margin-bottom: 30px;
+  padding: 8px;
 }
-/* line 160, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .main-list .list-box:hover {
   background-color: rgba(235, 235, 235, 0.5);
 }
-/* line 163, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .main-list .list-box img {
-  width: 130px;
-  height: 130px;
   border: 3px solid #ebebeb;
   box-sizing: border-box;
 }
-/* line 170, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .main-list .list-box h3 a {
+  display: block;
   color: #90c5c5;
   font-size: 21px;
   font-weight: bold;
   padding-bottom: 5px;
   text-decoration: none;
 }
-/* line 176, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .main-list .list-box h3 a:hover {
   color: #6fb3b3;
 }
-/* line 181, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .main-list .list-box span {
   color: #90c5c5;
   font-size: 14px;
 }
-/* line 185, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .main-list .list-box .list-detail {
   margin-top: 20px;
 }
-/* line 187, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .main-list .list-box .list-detail p {
   font-size: 15px;
   color: #7d7d7d;
   margin-bottom: 10px;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .pagination {
   text-align: center;
 }
-/* line 197, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .pagination ul {
   padding: 30px;
 }
-/* line 200, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .pagination li {
   display: inline-block;
   text-align: center;
   padding: 0 3px;
 }
-/* line 204, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .pagination li a {
   color: black;
   display: block;
@@ -380,13 +782,13 @@ h2 {
   line-height: 25px;
   background-color: #90c5c5;
 }
-/* line 212, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .pagination li a:hover, .pagination li a.active {
   background-color: #a1cece;
   color: white;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .footer {
   background-color: #90c5c5;
   text-align: center;
@@ -395,9 +797,91 @@ h2 {
   font-size: 18px;
 }
 
-/* line 226, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .clear-both {
   clear: both;
   overflow: hidden;
   *zoom: 1;
+}
+
+/* line 255, ../sass/style.scss */
+.med-info img {
+  border: 3px solid #e1e1e1;
+  box-sizing: border-box;
+}
+
+/* line 261, ../sass/style.scss */
+.med-title {
+  margin-bottom: 20px;
+}
+/* line 263, ../sass/style.scss */
+.med-title > h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+/* line 268, ../sass/style.scss */
+.med-title > span {
+  display: block;
+  color: #90c5c5;
+  white-space: nowrap;
+}
+
+/* line 275, ../sass/style.scss */
+.med-content > div {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  /* line 275, ../sass/style.scss */
+  .med-content > div {
+    margin-top: 0;
+  }
+}
+
+/* line 283, ../sass/style.scss */
+.med-chem {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+/* line 287, ../sass/style.scss */
+.med-chem > p:first-child {
+  margin-bottom: 20px;
+}
+/* line 290, ../sass/style.scss */
+.med-chem table {
+  margin-top: 5px;
+}
+/* line 292, ../sass/style.scss */
+.med-chem table tr:nth-child(2n+1) td {
+  background-color: rgba(225, 225, 225, 0.5);
+}
+/* line 295, ../sass/style.scss */
+.med-chem table tr:nth-child(2n+2) td {
+  background-color: white;
+}
+/* line 298, ../sass/style.scss */
+.med-chem table td {
+  line-height: 30px;
+}
+
+/* line 304, ../sass/style.scss */
+.tag-group li {
+  font-size: 14px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+/* line 309, ../sass/style.scss */
+.tag-group span {
+  padding: 5px 8px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin-right: 8px;
+  background-color: #90c5c5;
+}
+
+/* line 316, ../sass/style.scss */
+.med-detail {
+  margin: 30px 0 50px;
 }

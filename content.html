@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{%藥品名稱%}-開放藥典</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/easyResponsiveTabs.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+	  $('#med-tab').easyResponsiveTabs({
+	      type: 'default',
+	      width: 'auto'
+	  });
+	});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<section class="header">
+		<div>
+			<img src="images/logo.png" alt="開放藥典">
+			<ul>
+				<li><a href="#" class="med-name">搜藥名</a></li>
+				<li><a href="#" class="med-feature">特徵搜</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="main">
+		<div class="med-info">
+			<div class="med-title">				
+				<h2>使蒂諾斯膜衣錠10毫克</h2>
+				<span>STILNOX FLIM-COATED SCORED TABLETS 10MG</span>
+			</div>
+			<img src="images/item.jpg" alt="使蒂諾斯膜衣錠10毫克">
+			<div class="med-intro">
+				<div class="med-content">
+					<div class="med-chem">
+						<p>劑型：116膜衣錠</p>
+						<p>成分含量：</p>
+						<table width="100%">
+							<tr>
+								<td>ZOLPIDEM TARTRATE</td>
+								<td>10.0000000000</td>
+								<td>MG</td>
+							</tr>
+							<tr>
+								<td>ZOLPIDEM TARTRATE</td>
+								<td>10.0000000000</td>
+								<td>MG</td>
+							</tr>
+							<tr>
+								<td>ZOLPIDEM TARTRATE</td>
+								<td>10.0000000000</td>
+								<td>MG</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tag-group">
+						<ul>
+							<li><span>藥品類別</span>06須由醫師處方使用</li>
+							<li><span>許可證字號</span>衛署藥輸字第021531號</li>
+							<li><span>許可證種類</span>製劑</li>
+							<li><span>註銷狀態</span>已註銷</li>
+							<li><span>發證日期</span>86/02/03</li>
+							<li><span>管制藥品級別</span>D第四級管制藥品</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="med-detail">		
+			<div id="med-tab">          
+	            <ul class="resp-tabs-list">
+	                <li>注意事項</li>
+	                <li>禁忌</li>
+	                <li>警語</li>
+	                <li>用法用量</li>
+	                <li>藥理作用</li>
+	                <li>懷孕授乳資訊</li>
+	                <li>藥品交互作用</li>
+	                <li>製造商申請商</li>
+	            </ul> 
+	            <div class="resp-tabs-container">           
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	                <div> ....... </div>
+	            </div>
+	        </div> 
+		</div>
+	</section>
+	<section class="footer">
+		<p>copyright</p>
+	</section>
+</div>
+</body>
+</html>
