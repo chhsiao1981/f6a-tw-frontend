@@ -1,0 +1,46 @@
+div(ng-include="'navbar.html'")
+
+div.main-search
+  div
+    h2 想知道吃了什麼藥...
+    input(type='text', placeholder='輸入藥物關鍵字', ng-model='searchText')
+    button.search-btn(ng-click='onSearchText(searchText)') 搜尋
+  div.clear-both
+
+div.container
+  div.sub-search
+    h2 我的藥長這樣...
+    div.med-feature-box
+      div.group(ng-repeat='medFeatures in medFeatureGroups')
+        div.med-box(ng-repeat='medFeature in medFeatures')
+          label(for='')
+            input(type='checkbox')
+            {{medFeature.feature}}
+          img(ng-src='{{medFeature.img}}', alt='')
+      div.group
+        input(type='text', placeholder="找不到? 輸入其他特徵", ng-model='featureText')
+        button.search-btn(ng-click='onFeatureText(featureText)') 搜尋
+          
+  div.jumbotron.text-center
+    h1 'Allo, 'Allo!
+    p.lead
+      img(src="assets/images/yeoman.png", alt="I'm Yeoman")
+      br
+      Always a pleasure scaffolding your apps.
+    p
+      a.btn.btn-lg.btn-success(ng-href="#") Splendid!
+
+  div.row
+    div.col-sm-6.col-md-4(ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'")
+      div.thumbnail
+        img.pull-right(ng-src="assets/images/{{awesomeThing.logo}}", alt="{{awesomeThing.title}}")
+        div.caption
+          h3 {{awesomeThing.title}}
+          p {{awesomeThing.description}}
+          p
+            a(ng-href="{{awesomeThing.url}}") {{awesomeThing.url}}
+  hr
+
+  div.footer
+    p With ♥ from 
+      a(href="https://twitter.com/Swiip") @Swiip

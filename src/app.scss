@@ -1,0 +1,157 @@
+h2 {
+  color: #417b7b;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+/* line 20, ../sass/_layout.scss */
+.main-search {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: columns(12, 12);
+  margin: 0 auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.main-search::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 23, ../sass/_layout.scss */
+.main-search > div {
+  width: 91.52542%;
+  float: right;
+}
+@media (min-width: 768px) {
+  /* line 23, ../sass/_layout.scss */
+  .main-search > div {
+    width: 40.67797%;
+    float: right;
+  }
+}
+
+/* line 71, ../sass/style.scss */
+h2 {
+  color: #417b7b;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+/* line 77, ../sass/style.scss */
+.main-search {
+  background: #e9e9e9 url(/assets/images/index-big-img.jpg) center center no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  height: 240px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 77, ../sass/style.scss */
+  .main-search {
+    height: 360px;
+  }
+}
+/* line 86, ../sass/style.scss */
+.main-search > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  top: 50px;
+}
+@media (min-width: 768px) {
+  /* line 86, ../sass/style.scss */
+  .main-search > div {
+    top: 186px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+/* line 96, ../sass/style.scss */
+.main-search > div > input {
+  width: 60%;
+  height: 40px;
+  font-size: 18px;
+  padding: 0;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: 1px solid #417b7b;
+  float: left;
+}
+/* line 106, ../sass/style.scss */
+.main-search > div .search-btn {
+  float: left;
+}
+
+/* line 16, ../sass/style.scss */
+.main-search > div .search-btn, .sub-search .search-btn {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #417b7b;
+  box-shadow: none;
+  color: white;
+  border: 1px solid #417b7b;
+}
+/* line 26, ../sass/style.scss */
+.main-search > div .search-btn :hover, .sub-search .search-btn :hover {
+  background-color: #6fb3b3;
+}
+
+/* line 113, ../sass/style.scss */
+.sub-search {
+  background-color: white;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 117, ../sass/style.scss */
+.sub-search .group {
+  margin-bottom: 20px;
+}
+/* line 120, ../sass/style.scss */
+.sub-search > div {
+  position: relative;
+}
+/* line 123, ../sass/style.scss */
+.sub-search .med-box {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+}
+/* line 127, ../sass/style.scss */
+.sub-search .med-box input {
+  display: inline-block;
+}
+/* line 130, ../sass/style.scss */
+.sub-search .med-box img {
+  position: relative;
+  display: block;
+  border: 3px solid #e1e1e1;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+/* line 139, ../sass/style.scss */
+.sub-search input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #417b7b;
+  height: 40px;
+  font-size: 18px;
+  width: 200px;
+  outline: none;
+}
+/* line 147, ../sass/style.scss */
+.sub-search label {
+  font-size: 16px;
+  color: #6fb3b3;
+  font-weight: bold;
+}
+/* line 152, ../sass/style.scss */
+.sub-search .search-btn {
+  margin-left: 30px;
+}
+

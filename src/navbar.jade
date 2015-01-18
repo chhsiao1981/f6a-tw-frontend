@@ -1,0 +1,15 @@
+// use navbar to replace header
+nav.navbar(ng-controller="NavbarCtrl")
+  div.container
+    div.navbar-header
+      a(href="#/")
+        img(src="/assets/images/logo.png", alt="開放藥典")
+    ul.nav.navbar-nav
+      li
+        a(ng-href="#/") 搜藥名
+      li
+        a(ng-href="#/") 搜特徵
+    
+    ul.nav.navbar-nav.navbar-right
+      li
+        a(href="https://github.com/chhsiao1981/f6a-tw-frontend") github
