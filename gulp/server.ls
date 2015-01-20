@@ -7,7 +7,11 @@ browser-sync = require 'browser-sync'
 middleware = require './proxy'
 
 browser-sync-init = (base-dir, files, browser) ->
-  browser = if browser? then 'default' else browser
+  browser = if browser then browser else 'default'
+
+  console.log 'browser-sync-init: browser:', browser
+
+  console.log 'browser-sync-init: files:', files
 
   routes = null
   if base-dir == 'src' or util.is-array base-dir and base-dir.index-of 'src' != -1
@@ -24,6 +28,7 @@ browser-sync-init = (base-dir, files, browser) ->
 
 gulp.task 'serve', <[ watch ]>, ->
   browser-sync-init <[ src .tmp ]>, [
+    '.tmp/config.js'
     '.tmp/**/*.css'
     '.tmp/**/*.js'
     'src/assets/images/**/*'

@@ -4,6 +4,9 @@ angular.module 'f6aTwFrontend', <[ ngAnimate ngCookies ngTouch ngSanitize ngReso
       .when '/', do
         template-url: 'app.html',
         controller: 'AppCtrl'
+      .when '/search', do
+        template-url: 'search.html',
+        controller: 'SearchCtrl'
       .otherwise do
         redirect-to: '/'
 

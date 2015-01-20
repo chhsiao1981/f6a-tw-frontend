@@ -15,13 +15,20 @@ run-tests = (single-run, done) ->
 
   test-files = [
     paths.tmp + '/**/*.js'
+    '!' + paths.tmp + '/config.js'
     '!' + paths.tmp + '/**/*_test.js'
+  ]
+
+  config-file = [
+    'config_tmpl.ls'
   ]
 
   gulp.src test-files
     .pipe $.angular-filesort!
+    .pipe $.add-src.prepend config-file
     .pipe $.add-src.prepend bower-deps.js
     .pipe $.add-src.append paths.src + '/**/*_test.ls'
+    .pipe $.using!
     .pipe $.karma do
       config-file: 'karma.conf.ls',
       action: if single-run then 'run' else 'watch'

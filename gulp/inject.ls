@@ -12,13 +12,19 @@ gulp.task 'inject', <[ index-to-tmp partials styles scripts ]>, ->
     '!' + paths.tmp + '/vendor.css'
   ], {read: false}
 
+  config-file = [
+    paths.tmp + '/config.js'
+  ]
+
   inject-scripts = gulp.src [
     paths.tmp + '/**/*.js'
+    '!' + paths.tmp + '/config.js'
     '!' + paths.tmp + '/partials/templateCacheHtml.js'
     '!' + paths.tmp + '/**/*_test.js'
     '!' + paths.tmp + '/**/*.mock.js'
   ]
     .pipe $.angular-filesort!
+    .pipe $.add-src.prepend config-file
 
   inject-markups = gulp.src paths.tmp + '/partials/templateCacheHtml.js', {read: false}
 
