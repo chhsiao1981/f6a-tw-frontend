@@ -1,7 +1,19 @@
 div.search
-  ul
-    li(ng-repeat='eachQueryData in queryData')
-      p 中文名字: {{eachQueryData.name}}
-      p 英文名字: {{eachQueryData.en_name}}
-      p 許可證: {{eachQueryData.permit}}
-      p 適應症: {{eachQueryData.indication}}
+  div.container
+    div.main-list
+      div.list-box(ng-repeat='eachQueryData in queryData')
+        img(ng-src="{{eachQueryData.imgSrc}}", alt="")
+        div.list-info
+          h3
+            a(href="#") {{eachQueryData.name}}
+          span {{eachQueryData.en_name}}
+          div.list-detail
+            p {{eachQueryData.indication}}
+            p {{eachQueryData.permit}}
+            p {{eachQueryData.type}}
+            p {{eachQueryData.is_valid}}
+      div.clear-both
+    div.pagination
+      ul
+        li
+          a(ng-class="activePageClass(idx)", href="", ng-repeat="idx in pages") {{idx + 1}}

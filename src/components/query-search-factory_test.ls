@@ -10,7 +10,7 @@ describe 'factory: f6aTwFrontend.querySearch', (...) ->
     $httpBackend := _$httpBackend_
 
   it 'should get data', ->
-    $httpBackend.expect 'GET', 'http://localhost/api/query?str=HYM' .respond 200, do
+    $httpBackend.expect 'GET', 'http://localhost/api/query?str=HYM&limit=10' .respond 200, do
       success: true
       data: [
         * color: ''

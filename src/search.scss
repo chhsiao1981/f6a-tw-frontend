@@ -1,0 +1,114 @@
+/* line 44, ../sass/_layout.scss */
+.list-box {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../lib/ruby/gems/2.0.0/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+.list-box::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 47, ../sass/_layout.scss */
+  .list-box:nth-child(2n+1) {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 50, ../sass/_layout.scss */
+  .list-box:nth-child(2n+2) {
+    width: 49.15254%;
+    float: right;
+  }
+}
+/* line 54, ../sass/_layout.scss */
+.list-box img {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 57, ../sass/_layout.scss */
+.list-box .list-info {
+  width: 74.57627%;
+  float: right;
+}
+
+/* line 176, ../sass/style.scss */
+.main-list {
+  position: relative;
+  display: block;
+}
+/* line 179, ../sass/style.scss */
+.main-list .list-box {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 8px;
+}
+/* line 183, ../sass/style.scss */
+.main-list .list-box:hover {
+  background-color: rgba(235, 235, 235, 0.5);
+}
+/* line 186, ../sass/style.scss */
+.main-list .list-box img {
+  border: 3px solid #ebebeb;
+  box-sizing: border-box;
+}
+/* line 192, ../sass/style.scss */
+.main-list .list-box h3 a {
+  display: block;
+  color: #90c5c5;
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+/* line 199, ../sass/style.scss */
+.main-list .list-box h3 a:hover {
+  color: #6fb3b3;
+}
+/* line 204, ../sass/style.scss */
+.main-list .list-box span {
+  color: #90c5c5;
+  font-size: 14px;
+}
+/* line 208, ../sass/style.scss */
+.main-list .list-box .list-detail {
+  margin-top: 20px;
+}
+/* line 210, ../sass/style.scss */
+.main-list .list-box .list-detail p {
+  font-size: 15px;
+  color: #7d7d7d;
+  margin-bottom: 10px;
+}
+/* line 218, ../sass/style.scss */
+.pagination {
+  text-align: center;
+}
+/* line 220, ../sass/style.scss */
+.pagination ul {
+  padding: 30px;
+}
+/* line 223, ../sass/style.scss */
+.pagination li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 3px;
+}
+/* line 227, ../sass/style.scss */
+.pagination li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #90c5c5;
+}
+/* line 235, ../sass/style.scss */
+.pagination li a:hover, .pagination li a.active {
+  background-color: #a1cece;
+  color: white;
+}

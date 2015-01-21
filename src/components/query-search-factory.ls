@@ -13,7 +13,7 @@ angular.module 'f6aTwFrontend'
       cached-data.update-time
 
     get-data: ->
-      cached-data.data.data
+      cached-data.data
       
     query: (text, success-f) ->
       if cached-data.query-text == text
